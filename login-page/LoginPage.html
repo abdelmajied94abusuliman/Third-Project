@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/logo-home.png">
+    <title>Smart System</title>
+    <link rel="stylesheet" href="LoginPage.css">
+</head>
+<body>
+   
+<div id=container>
+    <h1>Login to Account</h1>
+    <div id="line1"></div>
+        <form id="log-in" action="../landing-page/landing-page.html">
+        <span class="content">
+                <label id="emailsection">Email:</label>
+                <br>
+                <br>
+                <input id="login-email" class="input-width" type="email" value="">
+
+                <span id="login-email-warining" style="display: none; color:red; font-size: 15px;">Your enter wrong email.</span>
+                <span id="login-email-accept" style="display: none; color:green; font-size: 15px;">Your email is correct.</span>
+            </span>
+            <div class="content">
+                <label id="passwordsection">Password:</label>
+                <br>
+                <br>
+                <input id="login-password" class="input-width" type="password" value="">
+
+                <span id="login-password-warining" style="display: none; color:red; font-size: 15px;">Your enter wrong password.</span>
+                <span id="login-password-accept" style="display: none; color:green; font-size: 15px;">Your password is correct.</span>
+                <br>
+            </div>
+            <button id="btn-log">Log in</button>
+        </form>
+    </div> 
+</div>
+
+<div id="sidebox">
+    <div id="hellosection">
+    <p id="helloText">Hello,It's time to work </p>
+    <div id="line2"></div>
+    </div>
+    <p id="text2">Fill up personal information and <br>start with us.</p>
+    <button id="btn-signup" onclick="backToSignUp()">Sign up</button>
+
+</div>
+    <script src="LoginPage.js"></script>
+</body>
+</html>

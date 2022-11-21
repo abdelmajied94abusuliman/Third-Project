@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Smart System</title>
+    <link rel="stylesheet" href="profileUser.css">
+
+    <script src="https://kit.fontawesome.com/b56885f075.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+   
+
+<div>
+   <nav class="navbar navbar-dark bg-dark" id="navProject"  aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+          
+          
+          
+            <div id="head">
+                <div class="content_Welcome">Welcome , <span id="user-name-home"></span></div>
+                <div id="right-head-side">
+                    <p id="email-of-user"></p>
+                    <img id="image-of-user-M" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">
+                    <img id="image-of-user-A" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">
+                </div>
+            </div>
+       
+    
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel"><img src="../image/logo2.png" alt="logo" class="img_logo"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            
+       <!-- ======= Header ======= -->
+            <header id="header">
+                <a href="../landing-page/landing-page.html" class="nav-link HOME"><i class="fa-solid fa-house" id="icon_header"></i><span>Home</span></a>
+                <a href="#" class="nav-link User_Page"><i class="fa-solid fa-user" id="icon_header"></i><span>User Page</span></a>
+                <a href="../table-page/LastPage.html" class="nav-link STUDENT"><i class="fa-solid fa-table" id="icon_header"></i><span>Developer</span></a>      
+                <a href="mailto:abdelmajied.abusuliman@gmail.com" class="nav-link Email"><i class="fa-solid fa-envelope" id="icon_header"></i><span>Email</span></a>    
+                
+                <div class="icon_facebook_linkedin">
+                    
+                <button class="Logout">Logout<i class="fa-solid fa-right-from-bracket icon_Logout" id="icon_header"></i></button>
+                
+                <br><br>
+
+                <p class="nav_paragraf">Copyright ©2022 by Smart System</p>
+                </div> 
+                    
+            </header>
+
+            </div>
+          </div>
+        </div>
+      </nav> 
+</div>  
+    
+    
+ <!-- -------------------------------------------------------------------------------------------------------- -->
+<div style="height: 100px;">
+
+</div>
+    <div class="pageFlex" >
+        <div class="leftSide">
+            <div>
+                <img id="profile=pic" class="imgcss" src="./photo/girl.png" alt="user photo">
+                <h2 id="name-of-user">lorem ipsum</h2>
+            </div>
+            <div class="socialMedia">
+                <ul>
+                    <li><a id="twitterIcon" class="link_icon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a id="githubIcon" class="link_icon" href="#"><i class="fa-brands fa-github "></i></a></li>
+                    <li><a id="linkedinIcon" class="link_icon" href="#"><i class="fa-brands fa-linkedin-in "></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class=rightSide>
+            <div class="info">
+                <h2>Information</h2>
+                <div class="infoFlex">
+                    <div class="data">
+                        <h3>Email</h3>
+                        <p id="email-of-user11">Lorem.ipsum@gmail.com</p>
+                    </div>
+                    <div class="data">
+                        <h3>Phone</h3>
+                        <p id="mobile-of-user">+962 1234567</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="bioDiv">
+                <h2 id="bio">Bio :</h2>
+                <div id="coach-bio"></div>
+                    <br>
+                    <br>
+                    <button id="clickToEditBio" onclick="openTxtArea()">Edit Bio</button>
+                    <div id="addTxtBio" style="display: none;">
+                        <textarea id="writeBioHere" value="" placeholder="write something about you . . ."></textarea>
+                        <br>
+                        <button id="clickToUpdate" onclick="editTxtBio()">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    <script src="UserProfile.js"></script>
+</body>
+</html>

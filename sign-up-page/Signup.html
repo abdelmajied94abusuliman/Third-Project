@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Signup.css">
+    <link rel="icon" href="../image/logo-home.png">
+    <title>Smart System</title>
+
+</head>
+<body>
+    <div id="forms-container"> 
+        <h1>Sign Up Account</h1>
+        <div id="line1"></div>
+        <div id=inputbox>
+        <form id="container" action="../login-page/LoginPage.html">
+            <div class="content">
+                <label><span class="requierd">*</span>First Name:</label>
+                <input id="my-username" class="input-width" type="username" value="" onchange="setValueforName()"> 
+                <div id="username-warining" style="display: none; color:red; font-size: 15px;">Please don't use numbers or Char. And don't let it empty.</div>
+                <div id="username-accept" style="display: none; color:green; font-size: 15px;">Username is okay.</div>
+            </div>
+ <br>           
+            <div class="content">
+                <label><span class="requierd">*</span>last name:</label>
+                <input id="my-username-last" class="input-width" type="username" value="" onchange="setValueforLastName()">
+                <div id="last-warining" style="display: none; color:red; font-size: 15px;">Please don't use numbers or Char. And don't let it empty.</div>
+                <div id="last-accept" style="display: none; color:green; font-size: 15px;">Username is okay.</div>
+            </div>
+
+<br>
+            <div class="content">
+                <label><span class="requierd">*</span>Email:</label>
+                <input id="my-email" class="input-width" type="email" value="" onchange="setValueforEmail()">
+                <div id="email-warining" style="display: none; color:red; font-size: 15px;">Please use "@" and ".com" in your email.</div>
+                <div id="email-repeat" style="display: none; color:red; font-size: 15px;">Your email is repeated.Please use another one.</div>
+                <div id="email-accept" style="display: none; color:green; font-size: 15px;">Email is okay.</div>
+            </div>
+<br>
+            <div class="content">
+                <label><span class="requierd">*</span> Confirm Email:</label>
+                <input id="re-my-email" class="input-width" type="email" value="" onchange="setValueforReEmail()">
+                <div id="reemail-warining" style="display: none; color:red; font-size: 15px;">Your email does not match.</div>
+                <div id="reemail-accept" style="display: none; color:green; font-size: 15px;">Email is okay.</div>
+            </div>
+<br>
+
+            <div class="content">
+                <label><span class="requierd">*</span> Password:</label>
+                <input id="my-password" class="input-width" type="password" value="" onchange="setValueforPassword()">
+                <div id="password-warining" style="display: none; color:red; font-size: 10px;">Please use capital and small letters, numbers and special Char in your password.</div>
+                <div id="password-accept" style="display: none; color:green; font-size: 15px;">Password is okay.</div>
+            </div>
+<br>
+            <div class="content">
+                <label><span class="requierd">*</span> Confirm Password:</label>
+                <input id="re-my-password" class="input-width" type="password" value="" onchange="setValueforRePassword()">
+                <div id="repassword-warining" style="display: none; color:red; font-size: 15px;">Your password does not match.</div>
+                <div id="repassword-accept" style="display: none; color:green; font-size: 15px;">Password is okay.</div>
+            </div>
+<br>
+
+            <div class="content">
+                <label><span class="requierd">*</span> Phone Number:</label>
+                <input id="my-number" class="input-width" type="text" value="" onchange="setValueforNumber()">
+                <div id="number-warining" style="display: none; color:red; font-size: 15px;">Your number is too short or too tall.</div>
+                <div id="number-accept" style="display: none; color:green; font-size: 15px;">Your number is correct</div>
+            </div>
+            <button id="btn">Sign Up</button><a href="../login-page/LoginPage.html" id="haveAcc">If you have already account.</a>
+        </form>
+        </div>
+    </div> 
+    <div id="sidebox">
+        <div id="hellosection">
+        <p id="helloText">Hello,It's time to work </p>
+        <div id="line2"></div>
+        </div>
+    
+    </div>
+    <script src="Signup.js"></script>
+</body>
+</html>

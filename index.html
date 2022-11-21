@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/logo-home.png">
+    <title>Smart System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div><img src="./image/logo-home.png" alt="" id="logo"></div>
+   <div>
+    <h1 id="smart" >SMART SYSTEM</h1>
+    <p id="bio">In our program, we care about the student's commitment
+        to the academic working days allocated to him, and he is
+        keen to record the days of his attendance, the number of
+       absences, and the amount of tasks he accomplished during
+        the study period.</p>
+        <div id="button" >  
+            <button id="sign" onclick="goToSignUp()" >sign up</button></a>
+            <button id="log" onclick="goToLogIn()">login</button ></a>
+        </div>
+        <img src="./image/girl.png" alt="Teacher" class="img_teacher">
+    </div>
+    <div>
+        <footer>
+            <div class="footer">
+
+                 <div id="bioNav">
+                     <img src="./image/coma.png" alt="icon">
+                     <p class="paragraph_footer">The advance of technology is based on making it fit in<br>
+                     so that you don't really even notice it, so it's part of everyday life</p>
+                 </div>
+
+                 <div id="bioNav2">
+                    <div class="bioNav2_divs">Get in touch</div>
+                    <div class="bioNav2_style"></div>
+                    <div class="bioNav2_divs">Email: support@smartsystem.io</div>
+                    <div class="bioNav2_divs">Phone: 0023153046</div>
+                 </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function goToSignUp() {
+            window.location.href = './sign-up-page/Signup.html'
+        }
+        function goToLogIn() {
+            window.location.href = './login-page/LoginPage.html'
+        }
+    </script>
+</body>
+</html>
