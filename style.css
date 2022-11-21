@@ -104,6 +104,15 @@ body{
     width: 50pc;
     height: 35pc;
 }
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 280px) {
 
     .bioNav2_divs{
@@ -602,7 +611,7 @@ font-size: 35px;
 }
 
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) and (max-width:1300px){
 
 
 
