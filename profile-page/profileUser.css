@@ -49,6 +49,7 @@
 
 #icon_header{
     padding-right: 20px;
+    cursor: pointer;
 }
 
 .nav_paragraf{
@@ -81,10 +82,10 @@ body{
         justify-content: space-evenly;
     }
     .imgcss{
-        border-radius: 40%;
+        border-radius: 50%;
         margin-bottom: 6px;
-        width:73% ;
-        height:70%;
+        width:80% ;
+        height:80%;
     }
     .leftSide h3{
         margin-bottom: 15px;
@@ -146,8 +147,13 @@ ul li a{
     display: block;
     
 }
+.active {
+    transform: scale(1.2);
+    color: #F1D3B3  !important;
+}
 .bioDiv{
     padding-right: 25px;
+    margin-top: -25px;
 }
 #writeBioHere{
     width: 600px;

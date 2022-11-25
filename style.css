@@ -226,7 +226,7 @@ color: white;
 .paragraph_footer{
 display: inline;
 font-size: 100px;
-display: none;
+/* display: none; */
 
 
 }
@@ -607,6 +607,13 @@ font-size: 35px;
 
 
 }
+.paragraph_footer{
+    display: inline;
+    font-size: 18px;
+    /* display: none; */
+    
+    
+}
 
 }
 
@@ -617,10 +624,10 @@ font-size: 35px;
 
 .img_teacher{
 padding-right: -20px;
-padding-top: 250px;
+margin-top: 90px;
 
-height: 25em;
-width: 33em;
+height: 28em;
+width: 37em;
 
 }
 #sign{

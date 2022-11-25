@@ -28,7 +28,6 @@
              <div id="head">
                  <div class="content_Welcome">Welcome , <span id="user-name-home"></span></div>
                  <div id="right-head-side">
-                     <p id="email-of-user"></p>
                      <img id="image-of-user-M" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">
                      <img id="image-of-user-A" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">
                  </div>
@@ -47,10 +46,10 @@
              
         <!-- ======= Header ======= -->
              <header id="header">
-                 <a href="../index.html"  class="nav-link HOME"><i class="fa-solid fa-house" id="icon_header"></i><span>Home</span></a>
-                 <a href="../profile-page/profileUser.html" class="nav-link User_Page"><i class="fa-solid fa-user" id="icon_header"></i><span>User Page</span></a>
-                 <a id="student" class="nav-link STUDENT"><i class="fa-solid fa-table" id="icon_header"></i><span>Developer</span></a>      
-                 <a href="mailto:abdelmajied.abusuliman@gmail.com" class="nav-link Email"><i class="fa-solid fa-envelope" id="icon_header"></i><span>Email</span></a>    
+                 <a href="../landing-page/landing-page.html" class="nav-link HOME" id="home"><i class="fa-solid fa-house" class="icon_header"></i><span> Home</span></a>
+                 <a href="../profile-page/profileUser.html" class="nav-link User_Page" id="profile"><i class="fa-solid fa-user" class="icon_header"></i><span> Profile</span></a>
+                 <a id="student" class="nav-link STUDENT active" id="trainees"><i class="fa-solid fa-table" class="icon_header"></i><span> Trainees</span></a>      
+                 <a href="mailto:abdelmajied.abusuliman@gmail.com" target="_blank" class="nav-link Email" id="email"><i class="fa-solid fa-envelope" class="icon_header"></i><span> Email</span></a>    
                  
                  <div class="icon_facebook_linkedin">
                      
@@ -81,7 +80,6 @@
         <option id="4" value="3" class="student">ID 4 : Amroo Al-Wageei</option>
     </select>
     <button id="add-student" onclick="addNewStudent()">Add New Developer</button>
-    <button id="clearAllDeveloperData" onclick="clearAll()">Clear All Developer Data</button>
     <button id="show-all-student" onclick="showAllStudent()">Show All Developer</button>
     <br>
     <br>
@@ -102,6 +100,8 @@
         </div>
     </div>
     <div id="totalStudent"></div> 
+
+
     <script src="./LastPage.js"></script>
 </body>
 </html>

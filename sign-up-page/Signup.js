@@ -5,7 +5,7 @@ let obj = {}
 
 
 function setValueforName() {
-    obj = {}
+    obj = {};
     let valueForName = document.getElementById("my-username").value;
     if (/\d/.test(valueForName)) {
         document.getElementById("username-warining").style.display = 'block';
@@ -21,7 +21,6 @@ function setValueforName() {
         obj['firstName'] = valueForName;
         console.log(obj); 
     }
-
 }
 function setValueforLastName() {
     let valueForLastName = document.getElementById("my-username-last").value;
@@ -40,24 +39,20 @@ function setValueforLastName() {
         console.log(obj); 
     }
 }
-
 let checkEmailtoStorage = false;
-
 function setValueforEmail() {
     let valueForEmail = document.getElementById("my-email").value;
 
-    let checkEmailinStorage = true;
+    let checkEmailinStorage = true;                                     
     arrayOfKeysAndValues.forEach(function(element){
         if(element.email !=  valueForEmail){
 
         }
         else {
-            alert("Your email is repeated")
             checkEmailinStorage = false;
         }
-    })
-
-    if (valueForEmail.match(/\w+@[a-zA-Z0-9]+.[a-zA-Z]{2,4}$/)) {
+    })                                                                
+    if (valueForEmail.match(/\w+@[a-zA-Z0-9]+.[a-zA-Z]{2,4}$/)) {       
         if (checkEmailinStorage) {
             document.getElementById("email-accept").style.display = 'block';
             document.getElementById("email-warining").style.display = 'none';
@@ -91,10 +86,8 @@ function setValueforReEmail(){
         document.getElementById("reemail-warining").style.display = 'block';
     }
 }
-
 var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 let checkPasstoStorage = false;
-
 function setValueforPassword() {
     let valueForPassword = document.getElementById("my-password").value;
 
@@ -136,9 +129,8 @@ function setValueforNumber() {
         document.getElementById("number-accept").style.display = 'none';
     }   
 }
-
 let formEvent = document.getElementById("btn")     
-formEvent.onclick = function (event) {
+    formEvent.onclick = function (event) {
 
     arrayOfKeysAndValues.push(obj)
     console.log(obj);
@@ -152,7 +144,7 @@ formEvent.onclick = function (event) {
         arrayOfKeysAndValues[arrayOfKeysAndValues.length - 1].lastName != undefined && 
         arrayOfKeysAndValues[arrayOfKeysAndValues.length - 1].email != undefined && 
         arrayOfKeysAndValues[arrayOfKeysAndValues.length - 1].password != undefined && 
-        arrayOfKeysAndValues[arrayOfKeysAndValues.length - 1].number != undefined &&  
+        arrayOfKeysAndValues[arrayOfKeysAndValues.length - 1].number != undefined &&       
         checkFirstName == arrayOfKeysAndValues[arrayOfKeysAndValues.length - 1].firstName && 
         checkLastName == arrayOfKeysAndValues[arrayOfKeysAndValues.length - 1].lastName && 
         checkEmail == arrayOfKeysAndValues[arrayOfKeysAndValues.length - 1].email && 
@@ -160,10 +152,7 @@ formEvent.onclick = function (event) {
         checkMobile == arrayOfKeysAndValues[arrayOfKeysAndValues.length - 1].number && checkPasstoStorage && checkEmailtoStorage){
 
         arrayToStorage.push(obj)
-        console.log(obj);
-        console.log(arrayToStorage);
         window.localStorage.setItem(`userInfo` , JSON.stringify(arrayToStorage))
-        window.sessionStorage.setItem(`userInfo` , JSON.stringify(arrayToStorage))
 
     }else {
         alert(`You are missed at least one of required information to register. Please check your information again`);

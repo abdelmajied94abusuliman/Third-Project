@@ -1049,9 +1049,14 @@ p {
     text-align: center;
 
 }
+.active {
+    transform: scale(1.2);
+    color: #F1D3B3  !important;
+}
 
 #icon_header{
     padding-right: 20px;
+    cursor: pointer;
 }
 
 .nav_paragraf{

@@ -27,7 +27,6 @@
             <div id="head">
                 <div class="content_Welcome">Welcome , <span id="user-name-home"></span></div>
                 <div id="right-head-side">
-                    <p id="email-of-user"></p>
                     <img id="image-of-user-M" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">
                     <img id="image-of-user-A" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">
                 </div>
@@ -47,13 +46,13 @@
        <!-- ======= Header ======= -->
             <header id="header">
                 <a href="../landing-page/landing-page.html" class="nav-link HOME"><i class="fa-solid fa-house" id="icon_header"></i><span>Home</span></a>
-                <a href="#" class="nav-link User_Page"><i class="fa-solid fa-user" id="icon_header"></i><span>User Page</span></a>
-                <a href="../table-page/LastPage.html" class="nav-link STUDENT"><i class="fa-solid fa-table" id="icon_header"></i><span>Developer</span></a>      
-                <a href="mailto:abdelmajied.abusuliman@gmail.com" class="nav-link Email"><i class="fa-solid fa-envelope" id="icon_header"></i><span>Email</span></a>    
+                <a href="#" class="nav-link User_Page active"><i class="fa-solid fa-user" id="icon_header"></i><span>Profile</span></a>
+                <a href="../table-page/LastPage.html" class="nav-link STUDENT"><i class="fa-solid fa-table" id="icon_header"></i><span>Trainees</span></a>      
+                <a href="mailto:abdelmajied.abusuliman@gmail.com" target="_blank" class="nav-link Email"><i class="fa-solid fa-envelope" id="icon_header"></i><span>Email</span></a>    
                 
                 <div class="icon_facebook_linkedin">
                     
-                <button class="Logout">Logout<i class="fa-solid fa-right-from-bracket icon_Logout" id="icon_header"></i></button>
+                <button class="Logout" onclick="exit()">Logout<i class="fa-solid fa-right-from-bracket icon_Logout" id="icon_header"></i></button>
                 
                 <br><br>
 
@@ -76,14 +75,14 @@
     <div class="pageFlex" >
         <div class="leftSide">
             <div>
-                <img id="profile=pic" class="imgcss" src="./photo/girl.png" alt="user photo">
+                <img id="profile=pic" class="imgcss" src="../image/girl.png" alt="user photo">
                 <h2 id="name-of-user">lorem ipsum</h2>
             </div>
             <div class="socialMedia">
                 <ul>
-                    <li><a id="twitterIcon" class="link_icon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a id="githubIcon" class="link_icon" href="#"><i class="fa-brands fa-github "></i></a></li>
-                    <li><a id="linkedinIcon" class="link_icon" href="#"><i class="fa-brands fa-linkedin-in "></i></a></li>
+                    <li><a id="twitterIcon" target="_blank" class="link_icon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a id="githubIcon" target="_blank" class="link_icon" href="#"><i class="fa-brands fa-github "></i></a></li>
+                    <li><a id="linkedinIcon" target="_blank" class="link_icon" href="#"><i class="fa-brands fa-linkedin-in "></i></a></li>
                 </ul>
             </div>
         </div>
@@ -107,8 +106,13 @@
                 <div id="coach-bio"></div>
                     <br>
                     <br>
-                    <button id="clickToEditBio" onclick="openTxtArea()">Edit Bio</button>
+                    <button id="clickToEditBio" onclick="openTxtArea()">Edit your Information</button>
+                    <label style="display: none;">Enter New Email</label>
+                    <input id="editEmail" value="" style="display: none;">
+                    <label style="display: none;">Enter New Number</label>
+                    <input id="editNumber" value="" style="display: none;">
                     <div id="addTxtBio" style="display: none;">
+                        <label style="display: none;">Edit your Bio</label>
                         <textarea id="writeBioHere" value="" placeholder="write something about you . . ."></textarea>
                         <br>
                         <button id="clickToUpdate" onclick="editTxtBio()">Update</button>
