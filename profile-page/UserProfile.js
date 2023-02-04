@@ -16,8 +16,8 @@ if (currentUser.email == 'Alaa.amayreh2022@yahoo.com'){
     document.getElementById("linkedinIcon").href = "https://www.linkedin.com/in/ala%E2%80%99a-amayreh-8797a5176/"
 
 } else if (currentUser.email == 'mona.salih@yahoo.com') {
-    document.getElementById("profile=pic").src = "https://pps.whatsapp.net/v/t61.24694-24/174570944_302804968719494_5668236056779515453_n.jpg?ccb=11-4&oh=01_AdTRWcuJHJNWTd2a26nWslmv1XTH3e93fpRRorvrebYlCA&oe=63878EB1"
-    document.getElementById("image-of-user-M").src = "https://pps.whatsapp.net/v/t61.24694-24/174570944_302804968719494_5668236056779515453_n.jpg?ccb=11-4&oh=01_AdTRWcuJHJNWTd2a26nWslmv1XTH3e93fpRRorvrebYlCA&oe=63878EB1"
+    document.getElementById("profile=pic").src = "../image/mona.jpg"
+    document.getElementById("image-of-user-M").src = "../image/mona.jpg"
     document.getElementById("user-name-home").innerHTML = currentUser.firstName + " " + currentUser.lastName
     document.getElementById("name-of-user").innerHTML = currentUser.firstName + " " + currentUser.lastName
     document.getElementById("email-of-user11").innerHTML = currentUser.email

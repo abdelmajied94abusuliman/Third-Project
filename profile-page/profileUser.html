@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" href="../image/logo-home.png">
+
     <title>Smart System</title>
     <link rel="stylesheet" href="profileUser.css">
 
@@ -27,8 +29,8 @@
             <div id="head">
                 <div class="content_Welcome">Welcome , <span id="user-name-home"></span></div>
                 <div id="right-head-side">
-                    <img id="image-of-user-M" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">
-                    <img id="image-of-user-A" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png">
+                    <img id="image-of-user-M" src="../image/logo2.png">
+                    <img id="image-of-user-A" src="../image/logo2.png">
                 </div>
             </div>
        
@@ -101,19 +103,19 @@
                     </div>
                 </div>
             </div>
-            <div class="bioDiv">
-                <h2 id="bio">Bio :</h2>
+            <div class="bioDiv" >
+                <!-- <h2 id="bio">Bio :</h2> -->
                 <div id="coach-bio"></div>
                     <br>
                     <br>
                     <button id="clickToEditBio" onclick="openTxtArea()">Edit your Information</button>
-                    <label style="display: none;">Enter New Email</label>
-                    <input id="editEmail" value="" style="display: none;">
-                    <label style="display: none;">Enter New Number</label>
-                    <input id="editNumber" value="" style="display: none;">
+                    <label  style="display: none;"><p class="media">Enter New Email</p></label>
+                    <input id="editEmail" value="mona.salih@yahoo.com" style="display: none;">
+                    <label  style="display: none;"><p  class="media">Enter New Number</p></label>
+                    <input id="editNumber" value="0777777777" style="display: none;">
                     <div id="addTxtBio" style="display: none;">
-                        <label style="display: none;">Edit your Bio</label>
-                        <textarea id="writeBioHere" value="" placeholder="write something about you . . ."></textarea>
+                        <label  style="display: none;"><p class="media">Edit your Bio</p></label>
+                        <textarea style="height: 50px !important;" id="writeBioHere" value="" placeholder="write something about you . . ."></textarea>
                         <br>
                         <button id="clickToUpdate" onclick="editTxtBio()">Update</button>
                     </div>
